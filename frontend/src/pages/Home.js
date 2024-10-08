@@ -22,7 +22,7 @@ function Home() {
 
     const fetchProducts = async () => {
         try {
-            const url = process.env.REACT_APP_API_URL/products;
+            const url = "https://mernapp-api.vercel.app/products";
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
